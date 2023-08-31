@@ -4,7 +4,7 @@ import { logger } from '../utils/logger.utils';
 const serviceRouter = Router();
 
 serviceRouter.post('/', async (req, res) => {
-  logger.info('Cart update extension executed');
+  logger.info(req.body);
   res.status(200);
   res.send();
 });
